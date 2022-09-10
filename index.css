@@ -218,6 +218,10 @@ header .icons li{
     justify-content: center; 
 }
 
+.link a{
+    color white;
+}
+
 #b1{
 
     border-right: 1px solid white;
