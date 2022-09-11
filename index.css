@@ -72,18 +72,6 @@ body {
     padding:0 .75em 0 0;
  }
 
-.icons li a {
-    color: #fff;
-    border-radius: 100%;
-    box-shadow: inset 0 0 0 1px #fff;
-    display: inline-block;
-    font-size: 1.3rem;
-    height: 3.2rem;
-    line-height: 3.2rem;
-    text-align: center;
-    width: 3.2rem;
-}
-
 .icons li i {
     color: #fff;
     border-radius: 100%;
@@ -186,24 +174,6 @@ body {
 
 
 
-.fa-github::before {
-    content: "\f09b";
-}
-
-.fa-linkedin {
-    content: "\f0e1";
-    font-family: 'Font Awesome 5 Free';
-}
-
-.fa-facebook::before {
-    content: "\f082";
-    font-family: 'Font Awesome 5 Free';
-}
-
-.fa-youtube::after {
-    content: "\f16a";
-    font-family: 'Font Awesome 5 Free';
-}
 
 
 .link{
@@ -264,7 +234,7 @@ button:hover {
     background-color: rgba(250,250,250,.25);
 }
 
-.icon:hover {
+.icons i:hover {
     background-color: rgba(250,250,250,.25);
 }
 
