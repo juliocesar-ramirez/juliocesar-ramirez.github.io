@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+*, :after, :before {
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -160,17 +164,11 @@ body {
 }
 
 
-
-
-
-
 #header nav ul {
     border-radius: 4px;
     display: flex;
     padding-left: 0;
 }
-
-
 
 
 
@@ -264,12 +262,7 @@ h1{
     letter-spacing: .5rem;
 }
 
-@media screen and (max-width: 736px){
-    h1 {
-	font-size: 1.75rem;
-	line-height: 1.4;
-    }
-}
+
 
 h2{
     letter-spacing: .5rem;
@@ -283,7 +276,7 @@ h2{
     width: -webkit-max-content;
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 480px){
     .menu ul{
 	align-items: center;
 	flex-direction: column;
@@ -319,4 +312,23 @@ h2{
     .nombre{
 	max-width: 400px;
     }
+    .nombre{
+	max-width: 300px;
+	padding: 3rem 2rem;
+    }
+    .nombre p{
+	font-size: 0.6rem;
+    }
+    h1 {
+	font-size: 1.35rem;
+	line-height: 1.4;
+    }
 }
+
+@media screen and (max-width: 736px){
+}
+
+@media screen and (max-width: 480px){
+
+}
+
