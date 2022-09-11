@@ -33,11 +33,11 @@ body {
 .fondo{
     width:100%;
     height: 100vh;
-    display: flex;
     background-attachment: fixed;
     background-size:cover;
     background-position:top center;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(background.jpg);
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -48,7 +48,57 @@ body {
     background-image: radial-gradient(rgba(0,0,0,.25) 25%,transparent 55%);
 }
 
-.a{
+.icons{
+    padding-left: 1em;
+    margin-bottom: 35px;
+} 
+
+.icon {
+    text-decoration: none;
+}
+
+.icons  .label {
+    display: none;
+}
+
+.icons li{
+    display: inline-block;
+    padding-right: 0;
+    font-family: FontAwesome;
+    padding:0 .75em 0 0;
+ }
+
+.icons li a {
+    color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0 0 0 1px #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    width: 3.2rem;
+}
+.nombre {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    color: #fff;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding: 4.5rem 3.5rem;
+}
+
+.nombre p{
+    letter-spacing: .2rem;
+    max-height: 40rem;
+    font-size: 0.9rem;
+    transition: max-height .75s ease,padding .75s ease,opacity .325s ease-in-out;
+    transition-delay: 0s, 0s, 0s;
+    transition-delay: .25s;
+
+}
+
+.article{
     display: none;
     width:100%;
     text-align: left;
@@ -62,10 +112,16 @@ body {
     border-radius: 4px
 }
 
-.a li{
+.article li{
     text-align: left;
     line-height: 1.65;
     margin: 0 0 2rem;
+}
+
+.article p{
+    margin: 0 0 2rem;
+    text-align: left;
+    line-height: 1.65;
 }
 
 .close{
@@ -74,7 +130,7 @@ body {
     top: -6%;
     cursor: pointer;
     border:none;
-    background-color: rgba(27,31,34,.85);
+    background-color: rgba(27,31,34,.05);
     font-size: 45px;
     border-radius: 100%;
     border: none;
@@ -104,69 +160,20 @@ body {
 }
 
 
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    border: 1;
-    font-size: 100%;
-    font: inherit;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
 
-.nombre {
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #fff;
-    max-width: 100%;
-    color: #fff;
-    line-height: 1.5;
-    text-transform: uppercase;
-    padding: 3rem 2rem;
-}
-
-.nombre p{
-    letter-spacing: .2rem;
-}
-
-.a p{
-    margin: 0 0 2rem;
-    text-align: left;
-    line-height: 1.65;
-}
-
-indice {
-    display: flex;
-    flex-direction: column;
-}
-
-header .inner {
-    padding-bottom: 48px;
-    padding-top: 48px;
-}
 
 
 
 #header nav ul {
     border-radius: 4px;
     display: flex;
-    list-style: none;
     padding-left: 0;
 }
 
 
-header .icons li{
-    display: inline-block;
-    padding-right: 0;
-    font-family: FontAwesome;
-}
 
-#header .inner {
-    max-height: 40rem;
-    overflow: hidden;
-    padding: 3rem 2rem;
-    transition: max-height .75s ease,padding .75s ease,opacity .325s ease-in-out;
-    transition-delay: 0s, 0s, 0s;
-    transition-delay: .25s;
-}
+
+
 .fa-github::before {
     content: "\f09b";
 }
@@ -183,16 +190,6 @@ header .icons li{
     content: "\f16a";
 }
 
-.icon {
-    border-bottom: none;
-    position: relative;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 35px;
-
-}
-
 
 .link{
     border: 1px solid white;
@@ -200,27 +197,34 @@ header .icons li{
 
 }
 
+
+.menu{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu ul{
+    border: 1px solid #fff;
+    list-style: none;
+}
+
 .link1{
     border: none;
-    box-shadow: none;
+    border-right: 1px solid white;
     color: #fff;
-    display: flex;
     cursor: pointer;
-    font-family: Source Sans Pro,sans-serif;
+    /* width: 170px; */
     font-size: .8rem;
     height: 2.75rem;
     letter-spacing: .2rem;
     line-height: 2.75rem;
-    width: 141.4px;
     padding: 0 1.25rem 0 1.45rem;
     text-transform: uppercase;
-    background-color: hsla(0,0%,100%,.075);
-    justify-content: center; 
+    background-color: transparent;
 }
 
-.link a{
-    color white;
-}
 
 #b1{
 
@@ -238,42 +242,25 @@ header .icons li{
 
     border-right: 1px solid white;
 }
-.icon > .label {
-    display: none;
+
+
+button:hover {
+    background-color: rgba(250,250,250,.25);
 }
 
-header ul {
-    list-style: disc;
-    margin-top: 0px;
-    padding-left: 1em;
-}
-
-ul.icons li {
-    display: inline-block;
-    padding: 0 .75em 0 0;
-}
-
-ul.icons li a {
-    color: #fff;
-    border-radius: 100%;
-    box-shadow: inset 0 0 0 1px #fff;
-    display: inline-block;
-    font-size: x-large;
-    height: 3.25rem;
-    line-height: 3.25rem;
-    text-align: center;
-    width: 3.25rem;
-}
-
-#header nav ul li button:hover {
-    opacity: 0.2;
-}
-#header .icon:hover {
-    opacity: 0.2;
+.icon:hover {
+    background-color: rgba(250,250,250,.25);
 }
 
 .close:hover {
-    opacity: 0.2;
+    background-color: rgba(250,250,250,.25);
+}
+
+h1{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    letter-spacing: .5rem;
 }
 
 
@@ -288,9 +275,35 @@ h2{
     padding-bottom: 0.5rem;
     width: -webkit-max-content;
 }
-h1{
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin: 0 0 1rem;
-    letter-spacing: .5rem;
+
+@media screen and (max-width: 880px){
+    .menu ul{
+	align-items: center;
+	flex-direction: column;
+	padding: 0 1.25rem 0 1.45rem;
+    }
+    #b1{
+	border: none;
+	border-bottom: 1px solid #fff;
+    }
+    #bb1{
+	border: none;
+	border-bottom: 1px solid #fff;
+    }
+
+    #b2{
+	border: none;
+	border-bottom: 1px solid #fff;
+    }
+    #b3{
+	border: none;
+	border-bottom: 1px solid #fff;
+    }
+    #b4{
+	border: none;
+	border-bottom: 1px solid #fff;
+    }
+    #b5{
+	border: none;
+    }	 
 }
