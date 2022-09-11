@@ -281,30 +281,33 @@ h2{
     .menu ul{
 	align-items: center;
 	flex-direction: column;
-	padding: 0 1.25rem 0 1.45rem;
     }
     #b1{
 	border: none;
+	width: 200px;
 	border-bottom: 1px solid #fff;
     }
     #bb1{
 	border: none;
-	border-bottom: 1px solid #fff;
     }
 
     #b2{
 	border: none;
+	width: 200px;
 	border-bottom: 1px solid #fff;
     }
     #b3{
 	border: none;
+	width: 200px;
 	border-bottom: 1px solid #fff;
     }
     #b4{
 	border: none;
+	width: 200px;
 	border-bottom: 1px solid #fff;
     }
     #b5{
 	border: none;
+	width: 200px;
     }	 
 }
