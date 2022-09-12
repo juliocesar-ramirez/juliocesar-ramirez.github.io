@@ -320,10 +320,36 @@ h2{
     }
 }
 
-@media screen and (max-width: 736px){
+@media screen and (max-width: 290px){
+    .nombre{
+	max-width: 240px;
+    }
+    .nombre h1{
+	letter-spacing: .3rem;
+	font-size: 1.1rem;
+	line-height: 1.2;
+    }
+    .nombre p{
+	font-size: 0.5rem;
+	letter-spacing: .15rem;
+    }
+    .menu ul{
+	width: 130px;
+    }
+    .link1{
+	font-size: 0.55rem;
+	width: 130px;
+	height: 36px;
+    }
+    .icons li i {
+	font-size: 0.9rem;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	width: 2.4rem;
+    }
+    .icons{
+	margin-bottom: 15px;
+    }
 }
 
-@media screen and (max-width: 480px){
-
-}
 
