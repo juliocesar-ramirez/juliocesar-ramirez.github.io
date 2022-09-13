@@ -25,12 +25,14 @@
 ::-webkit-scrollbar-track{
     background-color: #010303;
 }
-
 body {
     color: #fff;
     font-family: Source Sans Pro,sans-serif;
     font-size: 1rem;
     line-height: 1.65;
+    animation-name: todo;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out;
 }
 
 .fondo{
@@ -69,7 +71,7 @@ body {
     padding-right: 0;
     font-family: FontAwesome;
     padding:0 .75em 0 0;
- }
+}
 
 .icons li i {
     color: #fff;
@@ -94,12 +96,24 @@ body {
     padding: 4.5rem 3.5rem;
 }
 
+@keyframes todo{
+    from {
+	opacity: 0;
+	background-color: black;
+
+    }
+    to {
+	opacity: 1;
+	background-color: black;
+    }
+}
+
 .nombre p{
     letter-spacing: .2rem;
     font-size: 0.9rem;
-    transition: max-height .75s ease,padding .75s ease,opacity .325s ease-in-out;
-    transition-delay: 0s, 0s, 0s;
-    transition-delay: .25s;
+    /* transition: max-height .75s ease,padding .75s ease,opacity .325s ease-in-out; */
+    /* transition-delay: 0s, 0s, 0s; */
+    /* transition-delay: .25s; */
 
 }
 
@@ -247,8 +261,6 @@ h1{
     margin: 0 0 1rem;
     letter-spacing: .5rem;
 }
-
-
 
 h2{
     letter-spacing: .5rem;
