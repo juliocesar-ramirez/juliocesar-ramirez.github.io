@@ -25,12 +25,13 @@
 ::-webkit-scrollbar-track{
     background-color: #010303;
 }
+
 body {
     color: #fff;
     font-family: Source Sans Pro,sans-serif;
     font-size: 1rem;
     line-height: 1.65;
-    animation-name: todo;
+    animation-name: body;
     animation-duration: 2s;
     animation-timing-function:ease-in-out;
 }
@@ -93,19 +94,16 @@ body {
     line-height: 1.5;
     text-transform: uppercase;
     padding: 4.5rem 3.5rem;
+    animation-name: nombre;
+    animation-duration: 3s;
+    animation-timing-function:ease;
+    animation-delay: 0.1s;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-@keyframes todo{
-    from {
-	opacity: 0;
-	background-color: black;
 
-    }
-    to {
-	opacity: 1;
-	background-color: black;
-    }
-}
 
 .nombre p{
     letter-spacing: .2rem;
@@ -363,4 +361,26 @@ h2{
     }
 }
 
+
+@keyframes body{
+    from {
+	opacity: 0;
+	background-color: black;
+
+    }
+    to {
+	opacity: 1;
+	background-color: black;
+    }
+}
+
+@keyframes nombre{
+    from {
+
+	padding: 0 0;
+    }
+    to {
+	padding: 4.5rem 3.5rem;
+    }
+}
 
