@@ -308,6 +308,7 @@ h2{
     .nombre{
 	max-width: 330px;
 	padding: 2.2rem 1.2rem;
+	animation-name: nombre1;
     }
     .nombre h1{
 	letter-spacing: .5rem;
@@ -384,3 +385,12 @@ h2{
     }
 }
 
+@keyframes nombre1{
+    from {
+
+	padding: 0 0;
+    }
+    to {
+	padding: 2.2rem 1.2rem;
+    }
+}
