@@ -21,7 +21,8 @@ b2.addEventListener("click", funcion2);
 b3.addEventListener("click", funcion3);
 b4.addEventListener("click", funcion4);
 
-b1x.addEventListener("click", funcion1x);
+b1x.addEventListener("click", function () {
+    setTimeout(funcion1x,325)});
 b2x.addEventListener("click", funcion2x);
 b3x.addEventListener("click", funcion3x);
 b4x.addEventListener("click", funcion4x);
@@ -29,6 +30,7 @@ b4x.addEventListener("click", funcion4x);
 function funcion1() {
 	a1.classList.add("active");
 	container.classList.add("desactive");
+	a1.classList.add("prender");
 }
 
 function funcion2() {
@@ -43,8 +45,8 @@ function funcion3() {
 
 
 function funcion4() {
-    a4.classList.add("active");
-    container.classList.add("desactive");
+	a4.classList.add("active");
+	container.classList.add("desactive");
 }
 
 function funcion1x() {
