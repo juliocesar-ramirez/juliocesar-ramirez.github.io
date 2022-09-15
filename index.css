@@ -151,8 +151,8 @@ body {
     font-size: 45px;
     border-radius: 100%;
     border: none;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     color: #fff;
 }
 
@@ -182,9 +182,15 @@ body {
 .apagar{
     animation-name: apagar1 ;
     animation-duration: 0.325s;
-    animation-timing-function:ease-in-out;
 }
 
+.zoom{
+    animation-name: zoom1 ;
+    animation-duration: 2.325s;
+}
+.zoomf{
+    transform: scale(1.05);
+}
 .desactive{
     display: none;
 }
@@ -324,6 +330,10 @@ h2{
 	padding: 2.2rem 1.2rem;
 	animation-name: nombre1;
     }
+    .nombrex{
+	animation-name: nombre1;
+    }
+
     .nombre h1{
 	letter-spacing: .5rem;
 	font-size: 1.3rem;
@@ -419,4 +429,23 @@ h2{
 	opacity: 1;
     }
 }
+@keyframes apagar1{
+    from {
+	opacity: 1;
+	transform: translateY(0);
+    }
+    to {
+	opacity: 0;
+	transform: translateY(0.25rem);
+    }
+}
 
+@keyframes zoom1{
+    from {
+	transform: scale(1);
+
+    }
+    to {
+	transform: scale(1.05);
+    }
+}
