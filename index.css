@@ -31,7 +31,7 @@ body {
     font-family: Source Sans Pro,sans-serif;
     font-size: 1rem;
     line-height: 1.65;
-    animation-name: body;
+    animation-name: negro;
     animation-duration: 2s;
     animation-timing-function:ease-in-out;
 }
@@ -95,14 +95,11 @@ body {
     text-transform: uppercase;
     padding: 4.5rem 3.5rem;
     animation-name: nombre;
-    animation-duration: 3s;
-    animation-timing-function:ease;
-    animation-delay: 0.1s;
-
+    animation-duration: 2.325s;
+    animation-timing-function:normal;
     overflow-y: hidden;
     overflow-x: hidden;
 }
-
 
 
 .nombre p{
@@ -184,12 +181,19 @@ body {
     animation-duration: 0.325s;
 }
 
-.zoom{
-    animation-name: zoom1 ;
+.zoomin{
+    animation-name: zoomin1 ;
     animation-duration: 2.325s;
 }
-.zoomf{
+.zoomout{
+    animation-name: zoomout1 ;
+    animation-duration: 2.325s;
+}
+.zoominf{
     transform: scale(1.05);
+}
+.zoomoutf{
+    transform: scale(1);
 }
 .desactive{
     display: none;
@@ -201,9 +205,6 @@ body {
     display: flex;
     padding-left: 0;
 }
-
-
-
 
 
 .link{
@@ -380,72 +381,81 @@ h2{
 	height: 2.4rem;
 	line-height: 2.4rem;
 	width: 2.4rem;
+    	}
+	.icons{
+	    margin-bottom: 15px;
+	}
     }
-    .icons{
-	margin-bottom: 15px;
-    }
-}
 
 
-@keyframes body{
-    from {
-	opacity: 0;
-	background-color: black;
+    @keyframes negro{
+	from {
+	    opacity: 0;
+	    background-color: black;
 
+	}
+	to {
+	    opacity: 1;
+	    background-color: black;
+	}
     }
-    to {
-	opacity: 1;
-	background-color: black;
-    }
-}
 
-@keyframes nombre{
-    from {
+    @keyframes nombre{
+	from {
 
-	padding: 0 0;
-    }
-    to {
-	padding: 4.5rem 3.5rem;
-    }
-}
+	    padding: 0 0;
+	}
+	to {
+	    padding: 4.5rem 3.5rem;
 
-@keyframes nombre1{
-    from {
+	}
+    }
 
-	padding: 0 0;
-    }
-    to {
-	padding: 2.2rem 1.2rem;
-    }
-}
+    @keyframes nombre1{
+	from {
 
-@keyframes prender1{
-    from {
-	transform: translateY(0.25rem);
-	opacity: 0;
-    }
-    to {
-	transform: translateY(0);
-	opacity: 1;
-    }
-}
-@keyframes apagar1{
-    from {
-	opacity: 1;
-	transform: translateY(0);
-    }
-    to {
-	opacity: 0;
-	transform: translateY(0.25rem);
-    }
-}
+	    padding: 0 0;
+	}
+	to {
+	    padding: 2.2rem 1.2rem;
 
-@keyframes zoom1{
-    from {
-	transform: scale(1);
+	}
+    }
 
+    @keyframes prender1{
+	from {
+	    transform: translateY(0.25rem);
+	    opacity: 0;
+	}
+	to {
+	    transform: translateY(0);
+	    opacity: 1;
+	}
     }
-    to {
-	transform: scale(1.05);
+    @keyframes apagar1{
+	from {
+	    opacity: 1;
+	    transform: translateY(0);
+	}
+	to {
+	    opacity: 0;
+	    transform: translateY(0.25rem);
+	}
     }
-}
+
+    @keyframes zoomin1{
+	from {
+	    transform: scale(1);
+	}
+	to {
+	    transform: scale(1.05);
+	}
+    }
+    @keyframes zoomout1{
+	from {
+	    transform: scale(1.05);
+	}
+	to {
+	    transform: scale(1.0);
+	}
+    }
