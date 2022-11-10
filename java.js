@@ -10,6 +10,8 @@ var b2 = document.getElementById("b2");
 var b3 = document.getElementById("b3");
 var b4 = document.getElementById("b4");
 
+menu_link = document.querySelectorAll('.link1');
+
 var b1x = document.getElementById("c1");
 var b2x = document.getElementById("c2");
 var b3x = document.getElementById("c3");
