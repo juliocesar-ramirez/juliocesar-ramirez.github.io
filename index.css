@@ -200,7 +200,7 @@ body {
 }
 
 
-#header nav ul {
+.inicio nav ul {
     border-radius: 4px;
     display: flex;
     padding-left: 0;
