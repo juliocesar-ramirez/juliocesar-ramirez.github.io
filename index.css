@@ -227,7 +227,7 @@ body {
 }
 
 
-.link1{
+.menu_li{
     border: none;
     border-right: 1px solid white;
     color: #fff;
@@ -299,7 +299,7 @@ h2{
 	flex-direction: column;
 	width: 150px;
     }
-    .link1{
+    .menu_li{
 	font-size: 0.6rem;
 	width: 150px;
 	height: 37px;
@@ -372,7 +372,7 @@ h2{
     .menu ul{
 	width: 130px;
     }
-    .link1{
+    .menu_li{
 	font-size: 0.55rem;
 	width: 130px;
 	height: 36px;
