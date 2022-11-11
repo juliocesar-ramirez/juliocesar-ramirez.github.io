@@ -23,7 +23,7 @@ var a2 = document.getElementById("a2");
 // var a3 = document.getElementById("a3");
 // var a4 = document.getElementById("a4");
 
-var container = document.querySelector(".container");
+var container = document.querySelector(".inicio");
 var nombre = document.querySelector(".nombre");
 
 b1.addEventListener("click", funcion1);
