@@ -44,6 +44,7 @@ body {
     background-position:top center;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(background.jpg);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -215,34 +216,40 @@ body {
 
 
 .menu{
-    justify-content: center;
+    justify-content:center;
     text-align: center;
-    align-items: center;
+    align-items:center;
     display: flex;
+
 }
 
 .menu ul{
     border: 1px solid #fff;
     list-style: none;
+
 }
 
 
 .menu_li{
-    border: none;
-    border-right: 1px solid white;
+    /* border-right: 1px solid white; */
     color: #fff;
     cursor: pointer;
-    /* width: 170px; */
-    font-size: .8rem;
+    width: 145px;
     height: 2.75rem;
-    letter-spacing: .2rem;
-    line-height: 2.75rem;
-    padding: 0 1.25rem 0 1.45rem;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: 600;
+    display: flex;
+    justify-content: center ;
+    
+    
 }
-
+.menu_btn{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 145px;
+    background-color: transparent;
+    border: none;
+    letter-spacing: .2rem;
+}
 
 #b1{
 
