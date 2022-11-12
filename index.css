@@ -394,6 +394,10 @@ h2{
     .portada{
 	width: 40vh;
     }
+    .article{
+	width: 90%;
+
+    }
     .menu ul{
 	align-items: center;
 	flex-direction: column;
