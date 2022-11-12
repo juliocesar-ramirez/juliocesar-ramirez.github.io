@@ -404,6 +404,9 @@ h2{
 	width: 150px;
 	height: 37px;
     }
+    .menu_spam{
+	font-weight: 500;
+    }
     #b1{
 	border: none;
 	border-bottom: 1px solid #fff;
@@ -448,12 +451,12 @@ h2{
     .ext {
 	height: 30px;
     }
-    .icon li i {
-	font-size: 1rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
-	width: 2.6rem;
-    }
+    /* .icon_a i { */
+    /* 	font-size: 1rem; */
+    /* 	height: 2.6rem; */
+    /* 	line-height: 2.6rem; */
+    /* 	width: 2.6rem; */
+    /* } */
 }
 
 @media screen and (max-width: 290px){
