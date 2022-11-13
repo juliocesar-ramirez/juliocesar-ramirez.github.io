@@ -130,7 +130,7 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    background-color: rgba(250,250,250,.25);
+    background-color: rgba(250,250,250,.85);
     transform: translateY(100%);
     transition: transform 0.3s cubic-bezier(0.19,1,0.22,1);
 }
