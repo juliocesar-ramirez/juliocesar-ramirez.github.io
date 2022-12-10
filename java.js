@@ -6,9 +6,15 @@ window.addEventListener("load", function() {
 });
 
 var b1 = document.getElementById("b1");
+var b11 = document.getElementById("b11");
 var b2 = document.getElementById("b2");
+var b22 = document.getElementById("b22");
 var b3 = document.getElementById("b3");
+var b33 = document.getElementById("b33");
 var b4 = document.getElementById("b4");
+var b44 = document.getElementById("b44");
+var b55 = document.getElementById("b55");
+var subtitulo = document.getElementById("subtitulo");
 
 menu_link = document.querySelectorAll('menu_li');
 
@@ -25,6 +31,78 @@ var a2 = document.getElementById("a2");
 
 var container = document.querySelector(".portada");
 var nombre = document.querySelector(".nombre");
+var idioma_option = document.querySelectorAll("option");
+var titleEl = document.querySelector(".title");
+// idioma=document.getElementById("list").value;
+
+function getSelectValue(){
+    idioma = document.querySelector(".idioma").value;
+    
+    b11.textContent=data[idioma].b11;
+    b22.textContent=data[idioma].b22;
+    b33.textContent=data[idioma].b33;
+    b44.textContent=data[idioma].b44;
+    b55.textContent=data[idioma].b55;
+    subtitulo.textContent=data[idioma].subtitulo;
+}
+
+var data={
+    "in":
+    {
+	"b11":"About me",
+	"b22":"Proyects",
+	"b33":"Courses",
+	"b44":"Research",
+	"b55":"Resume",
+	"subtitulo":"Computational Fluid Dynamics"
+    },
+
+    "fr":
+    {
+	"b11":"À propos de moi",
+	"b22":"Projets",
+	"b33":"Cours",
+	"b44":"Recherche",
+	"b55":"Reprendre",
+	"subtitulo":"Dynamique des fluides numérique"
+    },
+
+    "es":
+    {
+	"b11":"Sobre mí",
+	"b22":"Proyectos",
+	"b33":"Cursos",
+	"b44":"Research",
+	"b55":"Curriculum",
+	"subtitulo":"Dinámica de Fluidos Computacional"
+    }
+};
+
+function getpdf(){
+    idioma=document.getElementById("list").value;
+    if(idioma=="in"){
+    }
+    else if(idioma=="fr"){
+    }
+    else {
+    location.href= "https://juliocesar-ramirez.github.io/resume-ramirez.pdf";
+    }
+}
+// idioma_option.forEach(el => {
+//     el.addEventListener('click',() => {
+// 	console.log('hole');
+
+// 	const attr=el.getAttribute('value');
+// 	titleEl.textContent=data[attr].title;
+//     });
+// });
+	
+
+// const changeLanguage = async (language)=>{
+//     const requestJson=await fetch('./ingles.json');
+//     const texts=await requestJson.json();
+//     console.log(texts);
+// };
 
 b1.addEventListener("click", funcion1);
 // b1.addEventListener("click", function () {
@@ -120,3 +198,4 @@ function funcion4x() {
 	container.classList.remove("desactive");
 }
 
+sel = document.getElementById('selector');

@@ -4,7 +4,7 @@
 }
 
 *, :after, :before {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 ::-webkit-scrollbar{
@@ -26,6 +26,49 @@
     background-color: #010303;
 }
 
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    /* grid-template-columns: 1fr 1fr; */
+    background-color: aqua;
+    /* padding: 20px 56px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* height: 50px; */
+    width:100%;
+}
+.header_idioma{
+    /* padding: 10px 20px; */
+    text-align: right;
+    /* background-color: red; */
+}
+.idioma option{
+    /* text-align: right; */
+    background-color: black;
+}
+
+.header_idioma svg{
+    width: 22px;
+    margin-top: 9px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.idioma{
+    /* background: rgba(0, 0,0, 0.05); */
+    background-color: red;
+    border: 1px solid #fff;
+    /* padding: 10px 20px; */
+    border-radius: 4px;
+    padding-left: 40px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* margin-left: 12px; */
+}
+
 body {
     color: #fff;
     font-family: Source Sans Pro,sans-serif;
@@ -34,15 +77,19 @@ body {
     animation-name: negro;
     animation-duration: 2s;
     animation-timing-function:ease-in-out;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:top center;
 }
 
 .fondo{
     width:100%;
-    height: 100vh;
-    background-attachment: fixed;
-    background-size:cover;
-    background-position:top center;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(background.jpg);
+    height: 80vh;
+    /* background-attachment: fixed; */
+    /* background-size:cover; */
+    /* background-position:top center; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)) ,url(background.jpg); */
     display: flex;
     flex-direction: column;
     justify-content: center;
