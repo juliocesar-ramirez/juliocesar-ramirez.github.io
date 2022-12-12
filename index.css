@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 *, :after, :before {
@@ -30,10 +31,13 @@ header{
     display: flex;
     flex-direction: row-reverse;
     /* grid-template-columns: 1fr 1fr; */
-    background-color: aqua;
+    background-color: transparent;
+    /* border: 1px solid #fff; */
+    background: linear-gradient(180deg,rgba(0,0,0,0.8) ,rgba(0,0,0,0.005)) ;
+    /* opacity: 0.9; */
     /* padding: 20px 56px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     /* height: 50px; */
     width:100%;
 }
@@ -55,14 +59,16 @@ header{
 }
 
 .idioma{
-    /* background: rgba(0, 0,0, 0.05); */
-    background-color: red;
+    background: rgba(0, 0,0, 0.05);
+    /* background-color: red; */
     border: 1px solid #fff;
     /* padding: 10px 20px; */
     border-radius: 4px;
     padding-left: 40px;
+    margin-right:20px;
+    padding-right: 20px;
     height: 40px;
-    width: 100%;
+    /* width: 100%; */
     color: white;
     cursor: pointer;
     font-size: 1.2rem;
@@ -111,7 +117,7 @@ body {
 
 .icon{
     /* padding-left: 1em; */
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     /* text-decoration: none; */
     display: flex;
     flex-direction: row;
@@ -128,8 +134,8 @@ body {
     padding-right: 0;
     font-family: FontAwesome;
     /* padding:0 .75em 0 0; */
-    padding-left: 0.325em;
-    padding-right: 0.325em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
  }
 .icon_a{
     display: flex;
@@ -139,12 +145,12 @@ body {
     border-radius: 100%;
     box-shadow: inset 0 0 0 1px #fff;
     /* font-size: 1.1rem; */
-    height: 3.2rem;
+    height: 3.5rem;
     justify-content: center;
     align-items: center;
     /* line-height: 3.2rem; */
     text-align: center;
-    width: 3.2rem;
+    width: 3.5rem;
     text-decoration:none;
 }
 .icon_a i {
@@ -156,11 +162,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1.3rem;
-    height: 3.2rem;
+    font-size: 1.4rem;
+    height: 3.5rem;
     /* line-height: 3.2rem; */
     text-align: center;
-    width: 3.2rem;
+    width: 3.5rem;
     position: relative;
     /* text-decoration: none; */
 }
@@ -199,7 +205,7 @@ body {
     color: #fff;
     line-height: 1.5;
     text-transform: uppercase;
-    padding: 4.5rem 3.5rem;
+    padding: 6rem 5rem;
     animation-name: nombre;
     animation-duration: 2.325s;
     animation-timing-function:normal;
@@ -210,7 +216,7 @@ body {
 
 .nombre p{
     letter-spacing: .2rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     /* transition: max-height .75s ease,padding .75s ease,opacity .325s ease-in-out; */
     /* transition-delay: 0s, 0s, 0s; */
     /* transition-delay: .25s; */
@@ -265,7 +271,7 @@ body {
 
 .ext {
     flex-grow: 1;
-    height: 56px;
+    height: 65px;
     flex-direction: inherit;
 }
 
@@ -339,8 +345,8 @@ body {
     /* border-right: 1px solid white; */
     color: #fff;
     cursor: pointer;
-    width: 145px;
-    height: 3rem;
+    width: 155px;
+    height: 3.5rem;
     display: flex;
     justify-content: center ;
 }
@@ -348,7 +354,7 @@ body {
 .menu_btn{
     color: #fff;
     text-transform: uppercase;
-    width: 145px;
+    width: 155px;
     background-color: transparent;
     border: none;
     letter-spacing: .2rem;
@@ -399,6 +405,7 @@ body {
     font-weight: 600;
     position: relative;
     z-index: 5;
+    font-size: 0.9rem;
 }
 
 #b1{
@@ -428,7 +435,7 @@ body {
 
 h1{
     /* font-size: 1.75rem; */
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin: 0 0 1rem;
     letter-spacing: .5rem;
@@ -582,7 +589,7 @@ h2{
 	    padding: 0 0;
 	}
 	to {
-	    padding: 4.5rem 3.5rem;
+	    padding: 6rem 5rem;
 
 	}
     }

@@ -7,8 +7,12 @@ window.addEventListener("load", function() {
 
 var b1 = document.getElementById("b1");
 var b11 = document.getElementById("b11");
+var b111 = document.getElementById("b111");
+var b112 = document.getElementById("b112");
 var b2 = document.getElementById("b2");
 var b22 = document.getElementById("b22");
+var b221 = document.getElementById("b221");
+var b222 = document.getElementById("b222");
 var b3 = document.getElementById("b3");
 var b33 = document.getElementById("b33");
 var b4 = document.getElementById("b4");
@@ -39,7 +43,11 @@ function getSelectValue(){
     idioma = document.querySelector(".idioma").value;
     
     b11.textContent=data[idioma].b11;
+    b111.textContent=data[idioma].b111;
+    b112.textContent=data[idioma].b112;
     b22.textContent=data[idioma].b22;
+    b221.textContent=data[idioma].b221;
+    b222.textContent=data[idioma].b222;
     b33.textContent=data[idioma].b33;
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
@@ -47,35 +55,48 @@ function getSelectValue(){
 }
 
 var data={
+    "es":
+    {
+	"b11":"Sobre mí",
+	"b111":"Sobre mí",
+	"b112":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b22":"Proyectos",
+	"b221":"Proyectos",
+	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
+	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
+	"b33":"Cursos",
+	"b44":"Research",
+	"b55":"Curriculum",
+	"subtitulo":"Dinámica de Fluidos Computacional"
+    },
     "in":
     {
 	"b11":"About me",
+	"b111":"About me",
+	"b112":"Bach. marco antonio es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
 	"b22":"Proyects",
+	"b221":"Proyects",
+	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
+	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
 	"b33":"Courses",
 	"b44":"Research",
 	"b55":"Resume",
 	"subtitulo":"Computational Fluid Dynamics"
     },
-
     "fr":
     {
 	"b11":"À propos de moi",
+	"b111":"À propos de moi",
+	"b112":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
 	"b22":"Projets",
 	"b33":"Cours",
 	"b44":"Recherche",
 	"b55":"Reprendre",
 	"subtitulo":"Dynamique des fluides numérique"
-    },
-
-    "es":
-    {
-	"b11":"Sobre mí",
-	"b22":"Proyectos",
-	"b33":"Cursos",
-	"b44":"Research",
-	"b55":"Curriculum",
-	"subtitulo":"Dinámica de Fluidos Computacional"
     }
+
+
+
 };
 
 function getpdf(){
