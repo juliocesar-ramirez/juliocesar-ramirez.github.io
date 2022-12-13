@@ -32,6 +32,7 @@ header{
     flex-direction: row-reverse;
     /* grid-template-columns: 1fr 1fr; */
     background-color: transparent;
+    /* background:red; */
     /* border: 1px solid #fff; */
     background: linear-gradient(180deg,rgba(0,0,0,0.8) ,rgba(0,0,0,0.005)) ;
     /* opacity: 0.9; */
@@ -39,7 +40,7 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
     /* height: 50px; */
-    width:100%;
+    /* width:100%; */
 }
 .header_idioma{
     /* padding: 10px 20px; */
@@ -108,7 +109,7 @@ body {
     background-image: radial-gradient(rgba(0,0,0,.25) 25%,transparent 55%);
 }
 .portada{
-    width: 80vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
