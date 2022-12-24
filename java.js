@@ -21,6 +21,7 @@ var b55 = document.getElementById("b55");
 var subtitulo = document.getElementById("subtitulo");
 
 menu_link = document.querySelectorAll('menu_li');
+var header = document.querySelector('header');
 
 var b1x = document.getElementById("c1");
 var b2x = document.getElementById("c2");
@@ -155,24 +156,32 @@ b4x.addEventListener("click", function () {
 function funcion1() {
     a1.classList.remove("apagar");
     a1.classList.add("active");
-	container.classList.add("desactive");
+    container.classList.add("desactive");
+    header.classList.add("desactive");
     a1.classList.add("prender");
-	fondo.classList.remove("zoomout");
+    fondo.classList.remove("zoomout");
     fondo.classList.remove("zoomoutf");
     fondo.classList.add("zoomin");
     fondo.classList.add("zoominf");
+    a1.classList.add("prueba");
+    a2.classList.add("prueba");
+
 
 }
 
 function funcion2() {
-	a2.classList.remove("apagar");
-	a2.classList.add("active");
-	container.classList.add("desactive");
-	a2.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
+    a2.classList.remove("apagar");
+    a2.classList.add("active");
+    container.classList.add("desactive");
+    header.classList.add("desactive");
+    a2.classList.add("prender");
+    fondo.classList.remove("zoomout");
+    fondo.classList.remove("zoomoutf");
+    fondo.classList.add("zoomin");
+    fondo.classList.add("zoominf");
+    a2.classList.add("prueba");
+
+
 }
 
 function funcion3() {
@@ -192,21 +201,25 @@ function funcion4() {
 function funcion1x() {
     a1.classList.remove("active");
     container.classList.remove("desactive");
+    header.classList.remove("desactive");
+    header.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
+    container.classList.add("prender");
+    fondo.classList.add("zoomout");
     fondo.classList.add("zoomoutf");
 }
 
 function funcion2x() {
-	a2.classList.remove("active");
-	container.classList.remove("desactive");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
+    a2.classList.remove("active");
+    container.classList.remove("desactive");
+    header.classList.remove("desactive");
+    header.classList.add("prender");
+    fondo.classList.remove("zoomin");
+    fondo.classList.remove("zoominf");
+    container.classList.add("prender");
+    fondo.classList.add("zoomout");
+    fondo.classList.add("zoomoutf");
 }
 
 function funcion3x() {
