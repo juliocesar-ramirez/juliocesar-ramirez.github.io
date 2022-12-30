@@ -8,7 +8,8 @@ window.addEventListener("load", function() {
 var b1 = document.getElementById("b1");
 var b11 = document.getElementById("b11");
 var b111 = document.getElementById("b111");
-var b112 = document.getElementById("b112");
+var b1121 = document.getElementById("b1121");
+var b1122 = document.getElementById("b1122");
 var b2 = document.getElementById("b2");
 var b22 = document.getElementById("b22");
 var b221 = document.getElementById("b221");
@@ -45,7 +46,8 @@ function getSelectValue(){
     
     b11.textContent=data[idioma].b11;
     b111.textContent=data[idioma].b111;
-    b112.textContent=data[idioma].b112;
+    b1121.textContent=data[idioma].b1121;
+    b1122.textContent=data[idioma].b1122;
     b22.textContent=data[idioma].b22;
     b221.textContent=data[idioma].b221;
     b222.textContent=data[idioma].b222;
@@ -60,7 +62,8 @@ var data={
     {
 	"b11":"Sobre mí",
 	"b111":"Sobre mí",
-	"b112":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b1121":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales.",
+	"b1122":"Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
 	"b22":"Proyectos",
 	"b221":"Proyectos",
 	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
@@ -74,7 +77,8 @@ var data={
     {
 	"b11":"About me",
 	"b111":"About me",
-	"b112":"Bach. marco antonio es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b1121":"Bachelor Julio Ramirez is passionate of computational fluid dynamics and programming languages. Two years of experiences in modelling and simulation in ambiental fluid topics.",
+	"b1122":"He completed his bachelor's degree in civil engineering in 2019 at Pontificia Universidad Católica de Perú",
 	"b22":"Proyects",
 	"b221":"Proyects",
 	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
@@ -88,7 +92,8 @@ var data={
     {
 	"b11":"À propos de moi",
 	"b111":"À propos de moi",
-	"b112":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b1121":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b1122":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
 	"b22":"Projets",
 	"b33":"Cours",
 	"b44":"Recherche",
