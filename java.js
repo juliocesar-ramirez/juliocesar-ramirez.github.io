@@ -22,7 +22,6 @@ var b55 = document.getElementById("b55");
 var subtitulo = document.getElementById("subtitulo");
 
 menu_link = document.querySelectorAll('menu_li');
-var header = document.querySelector('header');
 
 var b1x = document.getElementById("c1");
 var b2x = document.getElementById("c2");
@@ -39,6 +38,8 @@ var container = document.querySelector(".portada");
 var nombre = document.querySelector(".nombre");
 var idioma_option = document.querySelectorAll("option");
 var titleEl = document.querySelector(".title");
+var header1=document.querySelector("header");
+
 // idioma=document.getElementById("list").value;
 
 function getSelectValue(){
@@ -162,6 +163,7 @@ function funcion1() {
     a1.classList.remove("apagar");
     a1.classList.add("active");
     container.classList.add("desactive");
+    header1.classList.add("desactive");
     header.classList.add("desactive");
     a1.classList.add("prender");
     fondo.classList.remove("zoomout");
@@ -178,6 +180,7 @@ function funcion2() {
     a2.classList.remove("apagar");
     a2.classList.add("active");
     container.classList.add("desactive");
+    header1.classList.add("desactive");
     header.classList.add("desactive");
     a2.classList.add("prender");
     fondo.classList.remove("zoomout");
@@ -206,7 +209,7 @@ function funcion4() {
 function funcion1x() {
     a1.classList.remove("active");
     container.classList.remove("desactive");
-    header.classList.remove("desactive");
+    header1.classList.remove("desactive");
     header.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
@@ -218,7 +221,7 @@ function funcion1x() {
 function funcion2x() {
     a2.classList.remove("active");
     container.classList.remove("desactive");
-    header.classList.remove("desactive");
+    header1.classList.remove("desactive");
     header.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
