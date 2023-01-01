@@ -22,6 +22,7 @@ var b55 = document.getElementById("b55");
 var subtitulo = document.getElementById("subtitulo");
 
 menu_link = document.querySelectorAll('menu_li');
+allarticle = document.querySelectorAll('allarticle');
 
 var b1x = document.getElementById("c1");
 var b2x = document.getElementById("c2");
@@ -162,6 +163,7 @@ b4x.addEventListener("click", function () {
 function funcion1() {
     a1.classList.remove("apagar");
     a1.classList.add("active");
+    a2.classList.add("active");
     container.classList.add("desactive");
     header1.classList.add("desactive");
     header.classList.add("desactive");
@@ -171,7 +173,6 @@ function funcion1() {
     fondo.classList.add("zoomin");
     fondo.classList.add("zoominf");
     a1.classList.add("prueba");
-    a2.classList.add("prueba");
 
 
 }
@@ -188,6 +189,7 @@ function funcion2() {
     fondo.classList.add("zoomin");
     fondo.classList.add("zoominf");
     a2.classList.add("prueba");
+    a1.classList.add("prueba");
 
 
 }
