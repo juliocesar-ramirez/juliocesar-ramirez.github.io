@@ -303,7 +303,11 @@ body {
     display: none;
 }
 
-
+.prender{
+    animation-name: prender1 ;
+    animation-duration: 0.325s;
+    animation-timing-function:ease-in-out;
+}
 .main nav ul {
     border-radius: 4px;
     display: flex;

@@ -79,7 +79,7 @@ var data={
 	"b11":"About me",
 	"b111":"About me",
 	"b1121":"Bachelor Julio Ramirez is passionate of computational fluid dynamics and programming languages. Two years of experiences in modelling and simulation in ambiental fluid topics.",
-	"b1122":"He completed his bachelor's degree in civil engineering in 2019 at Pontificia Universidad Católica de Perú",
+	"b1122":"He completed his bachelor's degree in civil engineering in 2019 at Pontificia Universidad Católica de Perú.",
 	"b22":"Proyects",
 	"b221":"Proyects",
 	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
@@ -210,7 +210,8 @@ function funcion1x() {
     a1.classList.remove("active");
     container.classList.remove("desactive");
     header1.classList.remove("desactive");
-    header.classList.add("prender");
+    // header.classList.add("prender");
+    header1.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
     container.classList.add("prender");
@@ -222,6 +223,7 @@ function funcion2x() {
     a2.classList.remove("active");
     container.classList.remove("desactive");
     header1.classList.remove("desactive");
+    header1.classList.add("prender");
     header.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
