@@ -210,7 +210,7 @@ function funcion1x() {
     a1.classList.remove("active");
     container.classList.remove("desactive");
     header1.classList.remove("desactive");
-    // header.classList.add("prender");
+    header.classList.add("prender");
     header1.classList.add("prender");
     fondo.classList.remove("zoomin");
     fondo.classList.remove("zoominf");
