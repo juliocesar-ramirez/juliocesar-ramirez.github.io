@@ -15,6 +15,7 @@ var b2 = document.getElementById("b2");
 var b22 = document.getElementById("b22");
 var b221 = document.getElementById("b221");
 var b222 = document.getElementById("b222");
+var b223 = document.getElementById("b223");
 var b3 = document.getElementById("b3");
 var b33 = document.getElementById("b33");
 var b4 = document.getElementById("b4");
@@ -55,6 +56,7 @@ function getSelectValue(){
     b22.textContent=data[idioma].b22;
     b221.textContent=data[idioma].b221;
     b222.textContent=data[idioma].b222;
+    b223.textContent=data[idioma].b223;
     b33.textContent=data[idioma].b33;
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
@@ -85,8 +87,8 @@ var data={
 	"b1122":"He completed his bachelor's degree in civil engineering in 2019 at Pontificia Universidad Católica de Perú.",
 	"b22":"Proyects",
 	"b221":"Proyects",
-	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
-	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
+	"b222":"Turbulent parabolic velocity: Development of a new boundary condition in the openfoam library, based on c++. Vertical profile from a predefined parabolic velocity with randoms fluctuations over the time. This pertubations allow to work with LES and DES in unsteady flows.",
+	"b223":"Turbulent schmidt number with scalar transport equation: Implementation of the scalar dissipation equation for a pollutnat with the parameters of the schmidt y prandtl number. Code in openfoam, based on c++.",
 	"b33":"Courses",
 	"b44":"Research",
 	"b55":"Resume",
@@ -112,6 +114,7 @@ var data={
 function getpdf(){
     idioma=document.getElementById("list").value;
     if(idioma=="in"){
+    location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-en.pdf";
     }
     else if(idioma=="fr"){
     }
