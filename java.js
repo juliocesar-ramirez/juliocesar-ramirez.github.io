@@ -98,9 +98,12 @@ var data={
     {
 	"b11":"À propos de moi",
 	"b111":"À propos de moi",
-	"b1121":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
-	"b1122":"Bach. Julio Ramirez es un apasionado en temas de dinámica de fluidos computacional y en lenguajes de programación. Cuenta con 2 años de experiencia en investigación en temas de modelamiento y simulación de fluidos ambientales. Culminó el bachillerato de ingeniería civil en la Pontificia Universidad Católica del Perú en el año 2019.",
+	"b1121":"Le baccalauréat Julio Ramirez est passionné par la dynamique des fluides computationnelle et les langages de programmation. Il a 2 ans d'expérience dans la recherche sur les problématiques de modélisation et de simulation des fluides environnementaux.",
+	"b1122":"Il a obtenu son baccalauréat en génie civil à la Pontificia Universidad Católica del Perú en 2019.",
 	"b22":"Projets",
+	"b221":"Projets",
+	"b222":"Vitesse parabolique avec pseudo perturbations : Développement d'une nouvelle condition de bord dans la librairie Openfoam, basée sur c++. Profil de vitesse parabolique verticale à variation aléatoire dans le temps, les perturbations permettent de travailler avec des simulations avec le modèle de turbulence DES.",
+	"b223":"Equation scalaire de transport à nombre de Schmidt turbulent : Implémentation de l'équation scalaire de dissipation pour un polluant à nombre de Schmidt et Prandtl. Code en Openfoam, basé sur c++.",
 	"b33":"Cours",
 	"b44":"Recherche",
 	"b55":"Reprendre",
@@ -114,12 +117,13 @@ var data={
 function getpdf(){
     idioma=document.getElementById("list").value;
     if(idioma=="in"){
-    location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-en.pdf";
+	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-en.pdf";
     }
     else if(idioma=="fr"){
+	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-fr.pdf";
     }
     else {
-    location.href= "https://juliocesar-ramirez.github.io/resume-ramirez.pdf";
+	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez.pdf";
     }
 }
 // idioma_option.forEach(el => {
