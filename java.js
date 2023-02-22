@@ -18,6 +18,12 @@ var b222 = document.getElementById("b222");
 var b223 = document.getElementById("b223");
 var b3 = document.getElementById("b3");
 var b33 = document.getElementById("b33");
+var b331 = document.getElementById("b331");
+var b332 = document.getElementById("b332");
+var b333 = document.getElementById("b333");
+var b334 = document.getElementById("b334");
+var b335 = document.getElementById("b335");
+var b336 = document.getElementById("b336");
 var b4 = document.getElementById("b4");
 var b44 = document.getElementById("b44");
 var b55 = document.getElementById("b55");
@@ -58,6 +64,12 @@ function getSelectValue(){
     b222.textContent=data[idioma].b222;
     b223.textContent=data[idioma].b223;
     b33.textContent=data[idioma].b33;
+    b331.textContent = data[idioma].b331;
+    b332.textContent = data[idioma].b332;
+    b333.textContent = data[idioma].b333;
+    b334.textContent = data[idioma].b334;
+    b335.textContent = data[idioma].b335;
+    b336.textContent = data[idioma].b336;
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
     subtitulo.textContent=data[idioma].subtitulo;
@@ -75,24 +87,36 @@ var data={
 	"b222":"Velocidad parabólica con seudo pertubaciones: Desarrollo de una nueva condición de borde en la librería Openfoam, basado en c++. Perfil vertical de velocidad parábolico con variación aleatoria en el tiempo, las pertubaciones permitien trabajar con simulaciones con modelo de turbulencia DES.",
 	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
 	"b33":"Cursos",
-	"b44":"Research",
-	"b55":"Curriculum",
-	"subtitulo":"Dinámica de Fluidos Computacional"
+	"b331": "Cursos",
+	"b332": "Programación de CFD en OpenFOAM - CFD Direct 2021",
+	"b333": "OpenFOAM básico - CFD Support 2019",
+	"b334": "OpenFOAM avanzado - CFD Support 2019",
+	"b335": "OpenFOAM turbulencia - CFD Support 2019",
+	"b336": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b44": "Research",
+	"b55": "Curriculum",
+	"subtitulo": "Dinámica de Fluidos Computacional"
     },
     "in":
     {
 	"b11":"About me",
 	"b111":"About me",
-	"b1121":"Bachelor Julio Ramirez is passionate of computational fluid dynamics and programming languages. Two years of experiences in modelling and simulation in ambiental fluid topics.",
+	"b1121":"Bachelor Julio Ramirez is passionate about computational fluid dynamics and programming languages. Two years of experiences in modelling and simulation in ambiental fluid topics.",
 	"b1122":"He completed his bachelor's degree in civil engineering in 2019 at Pontificia Universidad Católica de Perú.",
 	"b22":"Proyects",
 	"b221":"Proyects",
 	"b222":"Turbulent parabolic velocity: Development of a new boundary condition in the openfoam library, based on c++. Vertical profile from a predefined parabolic velocity with randoms fluctuations over the time. This pertubations allow to work with LES and DES in unsteady flows.",
 	"b223":"Turbulent schmidt number with scalar transport equation: Implementation of the scalar dissipation equation for a pollutnat with the parameters of the schmidt y prandtl number. Code in openfoam, based on c++.",
 	"b33":"Courses",
-	"b44":"Research",
-	"b55":"Resume",
-	"subtitulo":"Computational Fluid Dynamics"
+	"b331": "Courses",
+	"b332": "Programing CFD OpenFOAM - CFD Direct 2021",
+	"b333": "OpenFOAM básico - CFD Support 2019",
+	"b334": "OpenFOAM Advanced - CFD Support 2019",
+	"b335": "OpenFOAM Turbulence - CFD Support 2019",
+	"b336": "Preprocessing Openfoam  - CFD Support 2019",
+	"b44": "Research",
+	"b55": "Resume",
+	"subtitulo": "Computational Fluid Dynamics"
     },
     "fr":
     {
@@ -105,9 +129,14 @@ var data={
 	"b222":"Vitesse parabolique avec pseudo perturbations : Développement d'une nouvelle condition de bord dans la librairie Openfoam, basée sur c++. Profil de vitesse parabolique verticale à variation aléatoire dans le temps, les perturbations permettent de travailler avec des simulations avec le modèle de turbulence DES.",
 	"b223":"Equation scalaire de transport à nombre de Schmidt turbulent : Implémentation de l'équation scalaire de dissipation pour un polluant à nombre de Schmidt et Prandtl. Code en Openfoam, basé sur c++.",
 	"b33":"Cours",
-	"b44":"Recherche",
-	"b55":"Reprendre",
-	"subtitulo":"Dynamique des fluides numérique"
+	"b332": "Programación de CFD en OpenFOAM - CFD Direct 2021",
+	"b333": "OpenFOAM básico - CFD Support 2019",
+	"b334": "OpenFOAM avanzado - CFD Support 2019",
+	"b335": "OpenFOAM turbulencia - CFD Support 2019",
+	"b336": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b44": "Recherche",
+	"b55": "Reprendre",
+	"subtitulo": "Dynamique des fluides numérique"
     }
 
 
@@ -117,13 +146,13 @@ var data={
 function getpdf(){
     idioma=document.getElementById("list").value;
     if(idioma=="in"){
-	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-en.pdf";
+	location.href= "https://juliocesar-ramirez.github.io/curriculum-julioramirez.pdf";
     }
     else if(idioma=="fr"){
-	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez-fr.pdf";
+	location.href= "https://juliocesar-ramirez.github.io/reprendre-julioramirez.pdf";
     }
     else {
-	location.href= "https://juliocesar-ramirez.github.io/resume-ramirez.pdf";
+	location.href= "https://juliocesar-ramirez.github.io/resume-julioramirez.pdf";
     }
 }
 // idioma_option.forEach(el => {
@@ -262,6 +291,34 @@ else{
 	fondo.classList.add("zoomout");
 	fondo.classList.add("zoomoutf");
     }
+    function funcion3() {
+	// a1.classList.remove("apagar");
+	a3.classList.add("active");
+	// a2.classList.add("active");
+	// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
+	container.classList.add("desactive");
+	header1.classList.add("desactive");
+	header.classList.add("desactive");
+	// a1.classList.add("prender");
+	fondo.classList.remove("zoomout");
+	fondo.classList.remove("zoomoutf");
+	fondo.classList.add("zoomin");
+	fondo.classList.add("zoominf");
+	// a1.classList.add("prueba");
+    }
+    function funcion3x() {
+	a3.classList.remove("active");
+	container.classList.remove("desactive");
+	header1.classList.remove("desactive");
+	header.classList.add("prender");
+	header1.classList.add("prender");
+	fondo.classList.remove("zoomin");
+	fondo.classList.remove("zoominf");
+	container.classList.add("prender");
+	fondo.classList.add("zoomout");
+	fondo.classList.add("zoomoutf");
+    }
+
 }
 
 
@@ -279,7 +336,7 @@ b1.addEventListener("click", funcion1);
 // });
 
 b2.addEventListener("click", funcion2);
-// b3.addEventListener("click", funcion3);
+b3.addEventListener("click", funcion3);
 // b4.addEventListener("click", funcion4);
 
 b1x.addEventListener("click", function () {
@@ -290,10 +347,10 @@ b2x.addEventListener("click", function () {
 	a2.classList.add("apagar");
 	setTimeout(funcion2x, 326);
 });
-// b3x.addEventListener("click", function () {
-// 	a3.classList.add("apagar");
-// 	setTimeout(funcion3x, 326);
-// });
+b3x.addEventListener("click", function () {
+	a3.classList.add("apagar");
+	setTimeout(funcion3x, 326);
+});
 // b4x.addEventListener("click", function () {
 // 	a4.classList.add("apagar");
 // 	setTimeout(funcion4x, 326);
