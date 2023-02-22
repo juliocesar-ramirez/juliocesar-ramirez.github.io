@@ -24,6 +24,8 @@ var b333 = document.getElementById("b333");
 var b334 = document.getElementById("b334");
 var b335 = document.getElementById("b335");
 var b336 = document.getElementById("b336");
+var b337 = document.getElementById("b337");
+var b338 = document.getElementById("b338");
 var b4 = document.getElementById("b4");
 var b44 = document.getElementById("b44");
 var b55 = document.getElementById("b55");
@@ -70,6 +72,8 @@ function getSelectValue(){
     b334.textContent = data[idioma].b334;
     b335.textContent = data[idioma].b335;
     b336.textContent = data[idioma].b336;
+    b337.textContent = data[idioma].b337;
+    b338.textContent = data[idioma].b338;
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
     subtitulo.textContent=data[idioma].subtitulo;
@@ -93,6 +97,8 @@ var data={
 	"b334": "OpenFOAM avanzado - CFD Support 2019",
 	"b335": "OpenFOAM turbulencia - CFD Support 2019",
 	"b336": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b337": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
+		"b338": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Research",
 	"b55": "Curriculum",
 	"subtitulo": "Dinámica de Fluidos Computacional"
@@ -114,6 +120,8 @@ var data={
 	"b334": "OpenFOAM Advanced - CFD Support 2019",
 	"b335": "OpenFOAM Turbulence - CFD Support 2019",
 	"b336": "Preprocessing Openfoam  - CFD Support 2019",
+	"b337": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
+	"b338": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Research",
 	"b55": "Resume",
 	"subtitulo": "Computational Fluid Dynamics"
@@ -129,11 +137,14 @@ var data={
 	"b222":"Vitesse parabolique avec pseudo perturbations : Développement d'une nouvelle condition de bord dans la librairie Openfoam, basée sur c++. Profil de vitesse parabolique verticale à variation aléatoire dans le temps, les perturbations permettent de travailler avec des simulations avec le modèle de turbulence DES.",
 	"b223":"Equation scalaire de transport à nombre de Schmidt turbulent : Implémentation de l'équation scalaire de dissipation pour un polluant à nombre de Schmidt et Prandtl. Code en Openfoam, basé sur c++.",
 	"b33":"Cours",
+	"b331": "Cours",
 	"b332": "Programación de CFD en OpenFOAM - CFD Direct 2021",
 	"b333": "OpenFOAM básico - CFD Support 2019",
 	"b334": "OpenFOAM avanzado - CFD Support 2019",
 	"b335": "OpenFOAM turbulencia - CFD Support 2019",
 	"b336": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b337": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
+	"b338": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Recherche",
 	"b55": "Reprendre",
 	"subtitulo": "Dynamique des fluides numérique"
@@ -143,17 +154,17 @@ var data={
 
 };
 
-function getpdf(){
-    idioma=document.getElementById("list").value;
-    if(idioma=="in"){
-	location.href= "https://juliocesar-ramirez.github.io/curriculum-julioramirez.pdf";
-    }
-    else if(idioma=="fr"){
-	location.href= "https://juliocesar-ramirez.github.io/reprendre-julioramirez.pdf";
-    }
-    else {
-	location.href= "https://juliocesar-ramirez.github.io/resume-julioramirez.pdf";
-    }
+function getpdf() {
+	idioma = document.getElementById("list").value;
+	if (idioma == "in") {
+		location.href = "https://juliocesar-ramirez.github.io/resume-julioramirez.pdf";
+	}
+	else if (idioma == "fr") {
+		location.href = "https://juliocesar-ramirez.github.io/reprendre-julioramirez.pdf";
+	}
+	else {
+		location.href = "https://juliocesar-ramirez.github.io/curriculum-julioramirez.pdf";
+	}
 }
 // idioma_option.forEach(el => {
 //     el.addEventListener('click',() => {
@@ -166,158 +177,158 @@ function getpdf(){
 const mql = window.matchMedia('(max-width: 480px)');
 
 if (mql.matches) {
-    console.log('Media Query Matched!');
-    console.log("DOM fully loaded and parsed");
-    function funcion1() {
-	// a1.classList.remove("apagar");
-	// a1.classList.add("active");
-	// a2.classList.add("active");
-	article1.forEach(el => {
-	    el.classList.add("active");
-	});
-	// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
-	container.classList.add("desactive");
-	header1.classList.add("desactive");
-	header.classList.add("desactive");
-	// a1.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
-	// a1.classList.add("prueba");
-    }
-    function funcion1x() {
-	article1.forEach(el => {
-	    el.classList.remove("active");
-	});
-	// a1.classList.remove("active");
-	container.classList.remove("desactive");
-	header1.classList.remove("desactive");
-	header.classList.add("prender");
-	header1.classList.add("prender");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
-    }
-    function funcion2() {
-	article1.forEach(el => {
-	    el.classList.add("active");
-	});
-	document.getElementById("a2").scrollIntoView({behavior: 'smooth'});
-	// a2.classList.remove("apagar");
-	container.classList.add("desactive");
-	header1.classList.add("desactive");
-	header.classList.add("desactive");
-	// a2.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
-	// a2.classList.add("prueba");
-	// a1.classList.add("prueba");
-    }
-    function funcion2x() {
-	article1.forEach(el => {
-	    el.classList.remove("active");
-	});
-	// a2.classList.remove("active");
-	// a1.classList.remove("active");
-	container.classList.remove("desactive");
-	header1.classList.remove("desactive");
-	header1.classList.add("prender");
-	header.classList.add("prender");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
-    }
+	console.log('Media Query Matched!');
+	console.log("DOM fully loaded and parsed");
+	function funcion1() {
+		// a1.classList.remove("apagar");
+		// a1.classList.add("active");
+		// a2.classList.add("active");
+		article1.forEach(el => {
+			el.classList.add("active");
+		});
+		// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
+		container.classList.add("desactive");
+		header1.classList.add("desactive");
+		header.classList.add("desactive");
+		// a1.classList.add("prender");
+		fondo.classList.remove("zoomout");
+		fondo.classList.remove("zoomoutf");
+		fondo.classList.add("zoomin");
+		fondo.classList.add("zoominf");
+		// a1.classList.add("prueba");
+	}
+	function funcion1x() {
+		article1.forEach(el => {
+			el.classList.remove("active");
+		});
+		// a1.classList.remove("active");
+		container.classList.remove("desactive");
+		header1.classList.remove("desactive");
+		header.classList.add("prender");
+		header1.classList.add("prender");
+		fondo.classList.remove("zoomin");
+		fondo.classList.remove("zoominf");
+		container.classList.add("prender");
+		fondo.classList.add("zoomout");
+		fondo.classList.add("zoomoutf");
+	}
+	function funcion2() {
+		article1.forEach(el => {
+			el.classList.add("active");
+		});
+		document.getElementById("a2").scrollIntoView({ behavior: 'smooth' });
+		// a2.classList.remove("apagar");
+		container.classList.add("desactive");
+		header1.classList.add("desactive");
+		header.classList.add("desactive");
+		// a2.classList.add("prender");
+		fondo.classList.remove("zoomout");
+		fondo.classList.remove("zoomoutf");
+		fondo.classList.add("zoomin");
+		fondo.classList.add("zoominf");
+		// a2.classList.add("prueba");
+		// a1.classList.add("prueba");
+	}
+	function funcion2x() {
+		article1.forEach(el => {
+			el.classList.remove("active");
+		});
+		// a2.classList.remove("active");
+		// a1.classList.remove("active");
+		container.classList.remove("desactive");
+		header1.classList.remove("desactive");
+		header1.classList.add("prender");
+		header.classList.add("prender");
+		fondo.classList.remove("zoomin");
+		fondo.classList.remove("zoominf");
+		container.classList.add("prender");
+		fondo.classList.add("zoomout");
+		fondo.classList.add("zoomoutf");
+	}
 }
-else{
-    console.log('Media Query Matched1!');
-    function funcion1() {
-	// a1.classList.remove("apagar");
-	a1.classList.add("active");
-	// a2.classList.add("active");
-	// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
-	container.classList.add("desactive");
-	header1.classList.add("desactive");
-	header.classList.add("desactive");
-	// a1.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
-	// a1.classList.add("prueba");
-    }
-    function funcion1x() {
-	a1.classList.remove("active");
-	container.classList.remove("desactive");
-	header1.classList.remove("desactive");
-	header.classList.add("prender");
-	header1.classList.add("prender");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
-    }
-    function funcion2() {
-	// a2.classList.remove("apagar");
-	a2.classList.add("active");
-	// a2.classList.remove("apagar");
-	container.classList.add("desactive");
-	header1.classList.add("desactive");
-	header.classList.add("desactive");
-	// a2.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
-	// a2.classList.add("prueba");
-	// a1.classList.add("prueba");
-    }
-    function funcion2x() {
-	a2.classList.remove("active");
-	container.classList.remove("desactive");
-	header1.classList.remove("desactive");
-	header1.classList.add("prender");
-	header.classList.add("prender");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
-    }
-    function funcion3() {
-	// a1.classList.remove("apagar");
-	a3.classList.add("active");
-	// a2.classList.add("active");
-	// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
-	container.classList.add("desactive");
-	header1.classList.add("desactive");
-	header.classList.add("desactive");
-	// a1.classList.add("prender");
-	fondo.classList.remove("zoomout");
-	fondo.classList.remove("zoomoutf");
-	fondo.classList.add("zoomin");
-	fondo.classList.add("zoominf");
-	// a1.classList.add("prueba");
-    }
-    function funcion3x() {
-	a3.classList.remove("active");
-	container.classList.remove("desactive");
-	header1.classList.remove("desactive");
-	header.classList.add("prender");
-	header1.classList.add("prender");
-	fondo.classList.remove("zoomin");
-	fondo.classList.remove("zoominf");
-	container.classList.add("prender");
-	fondo.classList.add("zoomout");
-	fondo.classList.add("zoomoutf");
-    }
+else {
+	console.log('Media Query Matched1!');
+	function funcion1() {
+		// a1.classList.remove("apagar");
+		a1.classList.add("active");
+		// a2.classList.add("active");
+		// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
+		container.classList.add("desactive");
+		header1.classList.add("desactive");
+		header.classList.add("desactive");
+		// a1.classList.add("prender");
+		fondo.classList.remove("zoomout");
+		fondo.classList.remove("zoomoutf");
+		fondo.classList.add("zoomin");
+		fondo.classList.add("zoominf");
+		// a1.classList.add("prueba");
+	}
+	function funcion1x() {
+		a1.classList.remove("active");
+		container.classList.remove("desactive");
+		header1.classList.remove("desactive");
+		header.classList.add("prender");
+		header1.classList.add("prender");
+		fondo.classList.remove("zoomin");
+		fondo.classList.remove("zoominf");
+		container.classList.add("prender");
+		fondo.classList.add("zoomout");
+		fondo.classList.add("zoomoutf");
+	}
+	function funcion2() {
+		// a2.classList.remove("apagar");
+		a2.classList.add("active");
+		// a2.classList.remove("apagar");
+		container.classList.add("desactive");
+		header1.classList.add("desactive");
+		header.classList.add("desactive");
+		// a2.classList.add("prender");
+		fondo.classList.remove("zoomout");
+		fondo.classList.remove("zoomoutf");
+		fondo.classList.add("zoomin");
+		fondo.classList.add("zoominf");
+		// a2.classList.add("prueba");
+		// a1.classList.add("prueba");
+	}
+	function funcion2x() {
+		a2.classList.remove("active");
+		container.classList.remove("desactive");
+		header1.classList.remove("desactive");
+		header1.classList.add("prender");
+		header.classList.add("prender");
+		fondo.classList.remove("zoomin");
+		fondo.classList.remove("zoominf");
+		container.classList.add("prender");
+		fondo.classList.add("zoomout");
+		fondo.classList.add("zoomoutf");
+	}
+	function funcion3() {
+		// a1.classList.remove("apagar");
+		a3.classList.add("active");
+		// a2.classList.add("active");
+		// document.getElementById("a1").scrollIntoView({behavior: 'smooth'});
+		container.classList.add("desactive");
+		header1.classList.add("desactive");
+		header.classList.add("desactive");
+		// a1.classList.add("prender");
+		fondo.classList.remove("zoomout");
+		fondo.classList.remove("zoomoutf");
+		fondo.classList.add("zoomin");
+		fondo.classList.add("zoominf");
+		// a1.classList.add("prueba");
+	}
+	function funcion3x() {
+		a3.classList.remove("active");
+		container.classList.remove("desactive");
+		header1.classList.remove("desactive");
+		header.classList.add("prender");
+		header1.classList.add("prender");
+		fondo.classList.remove("zoomin");
+		fondo.classList.remove("zoominf");
+		container.classList.add("prender");
+		fondo.classList.add("zoomout");
+		fondo.classList.add("zoomoutf");
+	}
 
 }
 
