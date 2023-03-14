@@ -26,6 +26,8 @@ var b335 = document.getElementById("b335");
 var b336 = document.getElementById("b336");
 var b337 = document.getElementById("b337");
 var b338 = document.getElementById("b338");
+var b339 = document.getElementById("b339");
+var b3310 = document.getElementById("b3310");
 var b4 = document.getElementById("b4");
 var b44 = document.getElementById("b44");
 var b55 = document.getElementById("b55");
@@ -74,6 +76,8 @@ function getSelectValue(){
     b336.textContent = data[idioma].b336;
     b337.textContent = data[idioma].b337;
     b338.textContent = data[idioma].b338;
+    b339.textContent = data[idioma].b339;
+    b3310.textContent = data[idioma].b3310;
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
     subtitulo.textContent=data[idioma].subtitulo;
@@ -92,14 +96,15 @@ var data={
 	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
 	"b33":"Cursos",
 	"b331": "Cursos",
-	"b332": "Programación CFD en OpenFOAM - CFD Direct 2021",
-	"b333": "Modelamiento de fuego en OpenFoam - OpenFOAM 2020",
-	"b334": "OpenFOAM turbulencia - CFD Support 2019",
-	"b335": "OpenFOAM avanzado - CFD Support 2019",
-	"b336": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
-	"b337": "OpenFOAM básico - CFD Support 2019",
-	"b338": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
-	"b339": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Master en ciencia de datos con python - inLearning 2021",
+	"b333": "Programación CFD en OpenFOAM - CFD Direct 2021",
+	"b334": "Modelamiento de fuego en OpenFoam - OpenFOAM 2020",
+	"b335": "OpenFOAM turbulencia - CFD Support 2019",
+	"b336": "OpenFOAM avanzado - CFD Support 2019",
+	"b337": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b338": "OpenFOAM básico - CFD Support 2019",
+	"b339": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
+	"b3310": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Research",
 	"b55": "Curriculum",
 	"subtitulo": "Dinámica de Fluidos Computacional"
@@ -116,14 +121,15 @@ var data={
 	"b223":"Turbulent schmidt number with scalar transport equation: Implementation of the scalar dissipation equation for a pollutnat with the parameters of the schmidt y prandtl number. Code in openfoam, based on c++.",
 	"b33":"Courses",
 	"b331": "Courses",
-	"b332": "Programing CFD OpenFOAM - CFD Direct 2021",
-	"b333": "Fire modelling with OpenFOAM - OpenFOAM 2020",
-	"b334": "OpenFOAM turbulence - CFD Support 2019",
-	"b335": "OpenFOAM advanced - CFD Support 2019",
-	"b336": "Preprocessing Openfoam  - CFD Support 2019",
-	"b337": "OpenFOAM basic - CFD Support 2019",
-	"b338": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
-	"b339": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Master python for data science - inLearning 2021",
+	"b333": "Programing CFD OpenFOAM - CFD Direct 2021",
+	"b334": "Fire modelling with OpenFOAM - OpenFOAM 2020",
+	"b335": "OpenFOAM turbulence - CFD Support 2019",
+	"b336": "OpenFOAM advanced - CFD Support 2019",
+	"b337": "Preprocessing Openfoam  - CFD Support 2019",
+	"b338": "OpenFOAM basic - CFD Support 2019",
+	"b339": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
+	"b3310": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Research",
 	"b55": "Resume",
 	"subtitulo": "Computational Fluid Dynamics"
@@ -140,14 +146,15 @@ var data={
 	"b223":"Equation scalaire de transport à nombre de Schmidt turbulent : Implémentation de l'équation scalaire de dissipation pour un polluant à nombre de Schmidt et Prandtl. Code en Openfoam, basé sur c++.",
 	"b33":"Cours",
 	"b331": "Cours",
-	"b332": "Programmation CFD dans OpenFOAM - CFD Direct 2021",
-	"b333": "Modélisation du feu dans OpenFOAM - OpenFOAM 2020",
-	"b334": "OpenFOAM turbulence - CFD Support 2019",
-	"b335": "OpenFOAM avancé - CFD Support 2019",
-	"b336": "Prétraitement dans OpenFOAM  - CFD Support 2019",
-	"b337": "OpenFOAM basique - CFD Support 2019",
-	"b338": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
-	"b339": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Maîtriser python pour la science des données - inLearning 2021",
+	"b333": "Programmation CFD dans OpenFOAM - CFD Direct 2021",
+	"b334": "Modélisation du feu dans OpenFOAM - OpenFOAM 2020",
+	"b335": "OpenFOAM turbulence - CFD Support 2019",
+	"b336": "OpenFOAM avancé - CFD Support 2019",
+	"b337": "Prétraitement dans OpenFOAM  - CFD Support 2019",
+	"b338": "OpenFOAM basique - CFD Support 2019",
+	"b339": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
+	"b3310": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
 	"b44": "Recherche",
 	"b55": "Reprendre",
 	"subtitulo": "Dynamique des fluides numérique"
