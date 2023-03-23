@@ -19,15 +19,19 @@ var b223 = document.getElementById("b223");
 var b3 = document.getElementById("b3");
 var b33 = document.getElementById("b33");
 var b331 = document.getElementById("b331");
+var b3312 = document.getElementById("b3312");
+var b3313 = document.getElementById("b3313");
+var b3314 = document.getElementById("b3314");
+var b3315 = document.getElementById("b3315");
+var b3316 = document.getElementById("b3316");
+var b3317 = document.getElementById("b3317");
+var b3318 = document.getElementById("b3318");
+var b3319 = document.getElementById("b3319");
+var b33110 = document.getElementById("b33110");
 var b332 = document.getElementById("b332");
-var b333 = document.getElementById("b333");
-var b334 = document.getElementById("b334");
-var b335 = document.getElementById("b335");
-var b336 = document.getElementById("b336");
-var b337 = document.getElementById("b337");
-var b338 = document.getElementById("b338");
-var b339 = document.getElementById("b339");
-var b3310 = document.getElementById("b3310");
+var b3321 = document.getElementById("b3321");
+var b3322 = document.getElementById("b3322");
+
 var b4 = document.getElementById("b4");
 var b44 = document.getElementById("b44");
 var b55 = document.getElementById("b55");
@@ -69,15 +73,19 @@ function getSelectValue(){
     b223.textContent=data[idioma].b223;
     b33.textContent=data[idioma].b33;
     b331.textContent = data[idioma].b331;
+    b3312.textContent = data[idioma].b3312;
+    b3313.textContent = data[idioma].b3313;
+    b3314.textContent = data[idioma].b3314;
+    b3315.textContent = data[idioma].b3315;
+    b3316.textContent = data[idioma].b3316;
+    b3317.textContent = data[idioma].b3317;
+    b3318.textContent = data[idioma].b3318;
+    b3319.textContent = data[idioma].b3319;
+    b33110.textContent = data[idioma].b33110;
     b332.textContent = data[idioma].b332;
-    b333.textContent = data[idioma].b333;
-    b334.textContent = data[idioma].b334;
-    b335.textContent = data[idioma].b335;
-    b336.textContent = data[idioma].b336;
-    b337.textContent = data[idioma].b337;
-    b338.textContent = data[idioma].b338;
-    b339.textContent = data[idioma].b339;
-    b3310.textContent = data[idioma].b3310;
+    b3321.textContent = data[idioma].b3321;
+    b3322.textContent = data[idioma].b3322;
+
     b44.textContent=data[idioma].b44;
     b55.textContent=data[idioma].b55;
     subtitulo.textContent=data[idioma].subtitulo;
@@ -96,15 +104,18 @@ var data={
 	"b223":"Ecuación de transporte escalar con el número turbulento de Schmidt: Implementación la ecuación de disipación escalar para un contaminante con parámetros del número de Schmidt y Prandtl. Código en Openfoam, basado en c++.",
 	"b33":"Cursos",
 	"b331": "Cursos",
-	"b332": "Master en ciencia de datos con python - inLearning 2021",
-	"b333": "Programación CFD en OpenFOAM - CFD Direct 2021",
-	"b334": "Modelamiento de fuego en OpenFoam - OpenFOAM 2020",
-	"b335": "OpenFOAM turbulencia - CFD Support 2019",
-	"b336": "OpenFOAM avanzado - CFD Support 2019",
-	"b337": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
-	"b338": "OpenFOAM básico - CFD Support 2019",
-	"b339": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
-	"b3310": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
+	"b3312": "Master en ciencia de datos con python - inLearning 2021",
+	"b3313": "Programación CFD en OpenFOAM - CFD Direct 2021",
+	"b3314": "Modelamiento de fuego en OpenFoam - OpenFOAM 2020",
+	"b3315": "OpenFOAM turbulencia - CFD Support 2019",
+	"b3316": "OpenFOAM avanzado - CFD Support 2019",
+	"b3317": "Preprocesamiento en OpenFOAM  - CFD Support 2019",
+	"b3318": "OpenFOAM básico - CFD Support 2019",
+	"b3319": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
+	"b33110": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Dictados",
+	"b3321": "Telemac 2D: Caso de río curvo - Privado 2022",
+	"b3322": "Modelamiento hidráulico para superficie libre con código abierto y libre - PUCP 2019",
 	"b44": "Research",
 	"b55": "Curriculum",
 	"subtitulo": "Dinámica de Fluidos Computacional"
@@ -121,15 +132,18 @@ var data={
 	"b223":"Turbulent schmidt number with scalar transport equation: Implementation of the scalar dissipation equation for a pollutnat with the parameters of the schmidt y prandtl number. Code in openfoam, based on c++.",
 	"b33":"Courses",
 	"b331": "Courses",
-	"b332": "Master python for data science - inLearning 2021",
-	"b333": "Programing CFD OpenFOAM - CFD Direct 2021",
-	"b334": "Fire modelling with OpenFOAM - OpenFOAM 2020",
-	"b335": "OpenFOAM turbulence - CFD Support 2019",
-	"b336": "OpenFOAM advanced - CFD Support 2019",
-	"b337": "Preprocessing Openfoam  - CFD Support 2019",
-	"b338": "OpenFOAM basic - CFD Support 2019",
-	"b339": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
-	"b3310": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
+	"b3312": "Master python for data science - inLearning 2021",
+	"b3313": "Programing CFD OpenFOAM - CFD Direct 2021",
+	"b3314": "Fire modelling with OpenFOAM - OpenFOAM 2020",
+	"b3315": "OpenFOAM turbulence - CFD Support 2019",
+	"b3316": "OpenFOAM advanced - CFD Support 2019",
+	"b3317": "Preprocessing Openfoam  - CFD Support 2019",
+	"b3318": "OpenFOAM basic - CFD Support 2019",
+	"b3319": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
+	"b33110": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Dictados",
+	"b3321": "Telemac 2D: Curved open channel - Privado 2022",
+	"b3322": "Open source hydraulic modelling of free surface flow - PUCP 2019",
 	"b44": "Research",
 	"b55": "Resume",
 	"subtitulo": "Computational Fluid Dynamics"
@@ -146,15 +160,18 @@ var data={
 	"b223":"Equation scalaire de transport à nombre de Schmidt turbulent : Implémentation de l'équation scalaire de dissipation pour un polluant à nombre de Schmidt et Prandtl. Code en Openfoam, basé sur c++.",
 	"b33":"Cours",
 	"b331": "Cours",
-	"b332": "Maîtriser python pour la science des données - inLearning 2021",
-	"b333": "Programmation CFD dans OpenFOAM - CFD Direct 2021",
-	"b334": "Modélisation du feu dans OpenFOAM - OpenFOAM 2020",
-	"b335": "OpenFOAM turbulence - CFD Support 2019",
-	"b336": "OpenFOAM avancé - CFD Support 2019",
-	"b337": "Prétraitement dans OpenFOAM  - CFD Support 2019",
-	"b338": "OpenFOAM basique - CFD Support 2019",
-	"b339": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
-	"b3310": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
+	"b3312": "Maîtriser python pour la science des données - inLearning 2021",
+	"b3313": "Programmation CFD dans OpenFOAM - CFD Direct 2021",
+	"b3314": "Modélisation du feu dans OpenFOAM - OpenFOAM 2020",
+	"b3315": "OpenFOAM turbulence - CFD Support 2019",
+	"b3316": "OpenFOAM avancé - CFD Support 2019",
+	"b3317": "Prétraitement dans OpenFOAM  - CFD Support 2019",
+	"b3318": "OpenFOAM basique - CFD Support 2019",
+	"b3319": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
+	"b33110": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
+	"b332": "Dictados",
+	"b3321": "Telemac 2D: Canal ouvert courbe- Private 2022",
+	"b3322": "Modélisation hydraulique open source de l'écoulement à surface libre - PUCP 2019",
 	"b44": "Recherche",
 	"b55": "Reprendre",
 	"subtitulo": "Dynamique des fluides numérique"
