@@ -31,6 +31,7 @@ var b33110 = document.getElementById("b33110");
 var b332 = document.getElementById("b332");
 var b3321 = document.getElementById("b3321");
 var b3322 = document.getElementById("b3322");
+var b3323 = document.getElementById("b3323");
 
 var b4 = document.getElementById("b4");
 var b44 = document.getElementById("b44");
@@ -114,8 +115,9 @@ var data={
 	"b3319": "Modelamiento hidráulico en superficie libre con código libre y abierto - Laboratorio Nacional de Hidráulica de la Universidad Nacional de Ingeniería 2018",
 	"b33110": "Autocad 2018 avanzando - Centro de Cómputo UNIMASTER 2018",
 	"b332": "Dictados",
-	"b3321": "Telemac 2D: Caso de río curvo - Privado 2022",
-	"b3322": "Modelamiento hidráulico para superficie libre con código abierto y libre - PUCP 2019",
+	"b3321": "Hidráulica computacional con interFoam - UPC 2023",
+	"b3322": "Flujo secundario en canal curvo con Telemac-2D - Privado 2022",
+	"b3323": "Modelamiento hidráulico para superficie libre con Telemac-2D - PUCP 2019",
 	"b44": "Research",
 	"b55": "Curriculum",
 	"subtitulo": "Dinámica de Fluidos Computacional"
@@ -142,8 +144,9 @@ var data={
 	"b3319": "Open source hydraulic modelling of shallow water flow - Universidad Nacional de Ingeniería National Hydraulics Laboratory 2018",
 	"b33110": "Autocad 2018 advanced - Centro de Cómputo UNIMASTER 2018",
 	"b332": "Dictados",
-	"b3321": "Telemac 2D: Curved open channel - Privado 2022",
-	"b3322": "Open source hydraulic modelling of free surface flow - PUCP 2019",
+	"b3321": "Computational hydraulics with interFoam - PUCP 2023",
+	"b3322": "Secondary flow in curved channel with Telemac-2D - Private 2022",
+	"b3323": "Hydraulic modelling of free surface flow with Telemac-2D - PUCP 2019",
 	"b44": "Research",
 	"b55": "Resume",
 	"subtitulo": "Computational Fluid Dynamics"
@@ -170,8 +173,9 @@ var data={
 	"b3319": "Modélisation hydraulique open source de surface libre -Laboratoire national d'hydraulique Universidad Nacional de Ingeniería 2018",
 	"b33110": "Autocad 2018 avancé - Centro de Cómputo UNIMASTER 2018",
 	"b332": "Dictados",
-	"b3321": "Telemac 2D: Canal ouvert courbe- Private 2022",
-	"b3322": "Modélisation hydraulique open source de l'écoulement à surface libre - PUCP 2019",
+	"b3321": "L'hydraulique numérique avec interFoam - UPC 2023",
+	"b3322": "Flux secondaire en canal courbe avec Telemac-2D - Private 2022",
+	"b3323": "Modélisation hydraulique de l'écoulement à surface libre avec Telemac-2D - PUCP 2019",
 	"b44": "Recherche",
 	"b55": "Reprendre",
 	"subtitulo": "Dynamique des fluides numérique"
